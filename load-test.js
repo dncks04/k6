@@ -9,7 +9,7 @@ export const options = {
     { duration: '10s', target: 0 },
   ],
   thresholds: {
-    http_req_duration: ['p(95)<10'], // 응답시간 95%가 10ms 이내여야 통과
+    http_req_duration: ['p(95)<0.5'], // 응답시간 95%가 10ms 이내여야 통과
     http_req_failed: ['rate<0.01'],   // 에러율 1% 미만이어야 통과
   },
 };
