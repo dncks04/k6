@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  # 1단계: 단위 테스트 (Node 직접 실행, Docker 없음)
+  # 1단계: 단위 테스트 
   test:
     runs-on: ubuntu-latest
     steps:
@@ -24,7 +24,7 @@ jobs:
       - name: 단위 테스트 실행
         run: npm test
 
-  # 2단계: k6 부하테스트 (test 통과 후에만 실행)
+  # 2단계: k6 부하테스트 
   load-test:
     needs: test
     runs-on: ubuntu-latest
