@@ -1,0 +1,17 @@
+{
+  "name": "cicd-k6-demo",
+  "version": "1.0.0",
+  "description": "GitHub Actions + Docker + k6 부하테스트 CI/CD 파이프라인 실습 프로젝트",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
